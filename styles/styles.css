@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'MuseoModerno', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+}
+
+.top{
+    display: flex;
+    background-color: rgb(137, 232, 253);
+    text-shadow: 1px 1px blue;
+}
+
+.top div{
+    width: 33%;
+    height: 50px;
+    padding: 25px;
+}
+
+.logo{
+    font-size: 30px;
+    font-family: 'MuseoModerno', cursive;
+    font-weight: bold;                          
+    color: rgb(182, 49, 75);
+}
+
+.logo i{
+    color: rgb(184, 54, 80);
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.search-bar input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 50%;
+    height: 12px;
+    padding: 5px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+
+.search-bar i{
+    position: absolute;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.login{
+    position: relative;
+}
+
+.login button{
+    position: absolute;
+    width: 25%;
+    height: 25px;
+    right: 100px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 67, 51);
+    cursor: pointer;
+    background-color: rgba(0,188,228,1);
+    color: rgba(255,67,51,1);
+    font-family:'Courier New', Courier, monospace;   
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgb(137, 232, 253);
+}
+
+.banner{
+    background-image: url("/img/SwitchBG.png");
+    width: 100%;
+    height: 70vh;
+}
+
+.sale{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.sale span{
+    color: #fd1c03;
+}
+
+
+.pics{
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.pics a{
+    color: rgb(137, 232, 253);
+}
+
+.pics img{
+    width: 300px;
+}
+
+.games{
+    width: 90%;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.games .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.game-card{
+    margin: 10px;
+    padding: 10px;
+    width: 25%;
+    height: 350px;
+    border: 1px solid rgb(137, 232, 253);
+    box-shadow: 0px 8px 15px rgba(137, 232, 253, 0.5);
+    text-align: center;
+}
+
+.game-card:hover{
+    width: 27%;
+    height: 380px;
+    border: 1px solid rgb(255, 67, 51);
+    box-shadow: 0px 8px 15px rgb(255, 67, 51);
+}
+
+.game-card img{
+    width: 40%;
+    height: 70%;
+}
+
+.contact{
+    background-color: rgb(137, 232, 253);
+}
+
+.contact-form{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form h3{
+    margin-top: 50px;
+    font-weight: bold;
+    color: rgb(255, 67, 51);
+}
+
+.contact-form i{
+    color: rgb(255, 67, 51);
+    font-size: 2rem;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 20px;
+    margin-top: 25px;
+    color: rgb(4, 79, 163);
+}
+
+.contact-form form input, .contact-form form textarea{
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.contact-form form textarea{
+    height: 150px;
+}
+
+.contact-form button{
+    background-color: #fff;
+    height: 40px;
+    width: 28%;
+    color: rgb(255, 67, 51);
+    font-weight: bold;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border: 1px solid rgba(0,188,228,1);
+    border-radius: 10px;
+}
+
+.contact-form button:hover{
+    background-color: rgb(255, 67, 51);
+    color: rgb(137, 232, 253);
+}   
+
+footer{
+    display: flex;
+    background-color: rgb(0,188,228,1);
+
+}
+
+footer div{
+    height: 150px;
+    width: 33%;
+    flex-direction: column;
+    font-size: 1.3rem;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 0;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+div .visit{
+    width: 100%;
+}
+
+.icons{
+    width: 50%;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    padding-top: 0;
+    padding-bottom: 50px;
+    font-size: 1.2rem;
+}
+
+i:hover{
+    color: rgb(255, 67, 51);
+}
+
+.icons a{
+    color: #fff;
+}
+
+.footer-logo{
+    display: flex;
+}
+
+.footer-logo p{
+    font-size: 1rem;
+}
+
+.backTop a{
+    text-decoration: none;
+    color: rgb(255, 67, 51);
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+.backTop a:hover{
+    color: #fff;
+}
+
