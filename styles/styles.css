@@ -16,8 +16,9 @@ a:hover{
 
 .top{
     display: flex;
-    background-color: rgb(137, 232, 253);
+    background-color: rgb(0,188,228,1);
     text-shadow: 1px 1px blue;
+    border-bottom: 1px solid rgb(255, 67, 51);
 }
 
 .top div{
@@ -30,11 +31,19 @@ a:hover{
     font-size: 30px;
     font-family: 'MuseoModerno', cursive;
     font-weight: bold;                          
-    color: rgb(182, 49, 75);
+    color: rgb(255, 67, 51);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .logo i{
     color: rgb(184, 54, 80);
+}
+
+.logo i,
+.logo p{
+    margin-right: 150px;
 }
 
 .search-bar{
@@ -62,29 +71,28 @@ a:hover{
 }
 
 .login{
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .login button{
-    position: absolute;
-    width: 25%;
-    height: 25px;
-    right: 100px;
-    border-radius: 5px;
-    border: 1px solid rgb(255, 67, 51);
-    cursor: pointer;
-    background-color: rgba(0,188,228,1);
-    color: rgba(255,67,51,1);
-    font-family:'Courier New', Courier, monospace;   
-    font-size: 20px;
+    background-color: #fff;
+    height: 40px;
+    width: 28%;
+    color: rgb(255, 67, 51);
     font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid rgba(0,188,228,1);
+    border-radius: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
 }
 
-button:hover{
-    background-color: rgb(137, 232, 253);
-}
+.login button:hover{
+    background-color: rgb(255, 67, 51);
+    color: rgb(137, 232, 253);
+}   
 
 .banner{
     background-image: url("/img/SwitchBG.png");
@@ -123,33 +131,48 @@ button:hover{
 
 .games{
     width: 90%;
-    height: 900px;
+    min-height: 1000px;
     margin: 0 auto;
     margin-top: 10px;
 }
 
-.games .container{
+.games .container-tripleA, 
+.games .container-indy{
+    margin-top: 100px;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
 }
 
+.more h4{
+    float: right;
+    width: 150px;
+    text-align: end;
+    padding-top: 20px;
+    font-weight: bold;
+    color: rgb(255, 67, 51);
+}
+
+.more h4:hover{
+    color: rgba(0,188,228,1)
+}
+
+
+
 .game-card{
     margin: 10px;
     padding: 10px;
     width: 25%;
-    height: 350px;
+    min-height: 350px;
     border: 1px solid rgb(137, 232, 253);
     box-shadow: 0px 8px 15px rgba(137, 232, 253, 0.5);
     text-align: center;
 }
 
 .game-card:hover{
-    width: 27%;
-    height: 380px;
     border: 1px solid rgb(255, 67, 51);
     box-shadow: 0px 8px 15px rgb(255, 67, 51);
 }
@@ -157,10 +180,6 @@ button:hover{
 .game-card img{
     width: 40%;
     height: 70%;
-}
-
-.contact{
-    background-color: rgb(137, 232, 253);
 }
 
 .contact-form{
@@ -175,11 +194,6 @@ button:hover{
     margin-top: 50px;
     font-weight: bold;
     color: rgb(255, 67, 51);
-}
-
-.contact-form i{
-    color: rgb(255, 67, 51);
-    font-size: 2rem;
 }
 
 .contact-form form{
@@ -212,6 +226,7 @@ button:hover{
     cursor: pointer;
     border: 1px solid rgba(0,188,228,1);
     border-radius: 10px;
+    transition: all 0.3s ease 0s;
 }
 
 .contact-form button:hover{
@@ -262,10 +277,12 @@ i:hover{
 
 .footer-logo{
     display: flex;
+    width: 300px;
 }
 
 .footer-logo p{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: black;
 }
 
 .backTop a{
@@ -279,4 +296,5 @@ i:hover{
 .backTop a:hover{
     color: #fff;
 }
+
 
